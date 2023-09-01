@@ -32,7 +32,7 @@ def addData(request,**kwargs):
         return redirect("/")
     return render(request,'ClinicalApp/data_form.html',{'form':form,'patient':patient})
 
-def analyze(request,**kwargs):
+def analyse(request,**kwargs):
     data=ClinicalData.objects.filter(patient_id=kwargs['pk'])
     responseData=[]
     for eachEntry in data:
