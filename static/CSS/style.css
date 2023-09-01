@@ -1,0 +1,13 @@
+body
+{
+    background-color: aqua;
+}
+.tag
+{
+    color:red;
+}
+.pic
+{
+    background-color: burlywood;
+    background-image: "static/doc.jpg";
+}

@@ -1,0 +1,18 @@
+<head>
+    <title>Clinical Data Creation</title>
+</head>
+<body>
+    <h2>Patient Details</h2>
+    First Name : {{patient.firstname}}
+    Last Name : {{patient.lastname}}
+    Age : {{patient.age}}
+    <h2>Patient Clinical Data</h2>
+    <form method='post'>
+        <table border="1">
+            {{form.as_table}}
+            {% csrf_token %}
+        </table>
+        <br/>
+        <input type='submit' value='Save'/>
+    </form>
+</body>
